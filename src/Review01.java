@@ -5,7 +5,7 @@ public class Review01 {
         //商品価格
         int productPrice = 1500;
         //消費税率 例：10%なら10を代入
-        int consumptionTaxRate = 10;
+        int consumptionTaxRate = 7;
         //消費税
         int consumptionTax;
         //税込み価格
@@ -21,9 +21,9 @@ public class Review01 {
     }
 
     public static int tax(int productPrice, int consumptionTaxRate) {
-        //消費税を計算(商品価格 / 消費税率(%))
-        int result = (productPrice / consumptionTaxRate);
-        return result;
+        //消費税を計算(商品価格 * ( 消費税率(%) / 100))
+        double result =  productPrice * ((double)consumptionTaxRate / 100);
+        return (int)result;
     }
 
 }
