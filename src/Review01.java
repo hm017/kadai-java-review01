@@ -5,7 +5,7 @@ public class Review01 {
         //商品価格
         int productPrice = 1500;
         //消費税率 例：10%なら10を代入
-        int consumptionTaxRate = 7;
+        int consumptionTaxRate = 10;
         //消費税
         int consumptionTax;
         //税込み価格
